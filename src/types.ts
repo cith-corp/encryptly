@@ -3,3 +3,8 @@ export type TEdition = {
     name: string
     price: number
 }
+export type TFeatureValue = {
+    editionId: string
+    isTickbox?: boolean
+    value: any
+}

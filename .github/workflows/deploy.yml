@@ -1,0 +1,20 @@
+name: Deploy Page
+run-name: Deploy Page
+
+env:
+  PROJECT_ROOT: "/"
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "./${{env.PROJECT_ROOT}}"
+    steps:
+      - uses: actions/checkout@v4

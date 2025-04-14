@@ -8,3 +8,9 @@ export type TFeatureValue = {
     isTickbox?: boolean
     value: any
 }
+
+export type TFeature = {
+    displayName: string
+    values: any
+   
+    }

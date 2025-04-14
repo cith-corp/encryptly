@@ -12,5 +12,26 @@
 }
 
 .footer {
-    
+
+
+}
+
+.AvatarRoot {
+    display: inline-flex;
+    align-items: center;
+
+
+}
+
+.AvatarImage {
+    width: 100%;
+    height: 100%;
+}
+
+.AvatarFallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
 }

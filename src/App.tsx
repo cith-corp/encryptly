@@ -15,7 +15,12 @@ const editions: TEdition[] = [
         id: "basic",
         name: "Basic tier",
         price: 50,
-    }
+    },
+  {
+    id: "pro",
+    name: "Ultimate Pro",
+    price: 59,
+  }
 ];
 
 const features: TFeature[] = [
@@ -108,9 +113,9 @@ function App() {
         name: "Test",
         role: "",
         company: "",
-        content: "",
+        content: "Very nice product, would use again.",
         rating: 5,
-        image:
+        image: test,
       }
 }
 

@@ -19,7 +19,10 @@
 .AvatarRoot {
     display: inline-flex;
     align-items: center;
-
+    justify-content: center;
+    background-color: white;
+    color: var(--violet-11);
+    font-size: 15px;
 
 }
 

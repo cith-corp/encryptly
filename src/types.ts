@@ -11,6 +11,4 @@ export type TFeatureValue = {
 
 export type TFeature = {
     displayName: string
-    values: any
-   
     }

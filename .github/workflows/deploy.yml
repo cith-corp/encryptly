@@ -18,3 +18,7 @@ jobs:
         working-directory: "./${{env.PROJECT_ROOT}}"
     steps:
       - uses: actions/checkout@v4
+
+      - name: actual deployment
+        uses: actions/deploy-webpage@v2
+        # TODO

@@ -14,16 +14,21 @@ import { TEdition, TFeature, TFeatureValue } from "./types";
 
 const editions: TEdition[] = [
     {
-        id: "basic",
-        name: "Basic tier",
-        price: 50,
+      id: "basic",
+      name: "Ultimate Basic",
+      price: 29,
     },
     {
-        id: "pro",
-        name: "Ultimate Pro",
-        price: 59,
-    }
-];
+      id: "pro",
+      name: "Ultimate Pro",
+      price: 59,
+    },
+    {
+      id: "ultimate",
+      name: "Ultimate Ultimate",
+      price: 666,
+    },
+  ];
 
 const features: TFeature[] = [
     {
@@ -211,7 +216,7 @@ function Footer() {
                         <h4 className="font-semibold">Connect With Us</h4>
                         <div className="space-y-2">
                             <a
-                                href="https://github.com"
+                                href="https://github.com/cith-corp/encryptly"
                                 className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
                             >
                                 <GithubLogo weight="duotone" />

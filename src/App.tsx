@@ -109,11 +109,6 @@ function TestimonialCard({ name, role, company, content, rating, image }: any) {
     );
 }
 
-function Login() {
-    // TODO: Loginstuff
-
-}
-
 function App() {
     const testimonials = [
       {

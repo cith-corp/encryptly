@@ -1,6 +1,8 @@
-import { Button, Card, Dialog, Flex } from "@radix-ui/themes";
+import { Button, Card, Dialog, Flex, Table, Text, Separator } from "@radix-ui/themes";
 
-import { Avatar } from "radix-ui";
+import dmtry from "./assets/DK1-002.jpg";
+import elon from "./assets/elon.jpg";
+import miguel from "./assets/miguel.jpg";
 
 import "./App.css";
 
@@ -108,7 +110,7 @@ function TestimonialCard({ name, role, company, content, rating, image }: any) {
 }
 
 function Login() {
-    // TODO: Login function for "dora.the.explorer"-acc
+    // TODO: Loginstuff
 
 }
 

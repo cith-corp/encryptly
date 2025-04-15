@@ -39,18 +39,22 @@ const features: TFeature[] = [
           { editionId: "ultimate", value: "5+ DC/min" },
         ],
       },
-    {
+      {
         displayName: "Fuel Consumption",
         values: [
-            { editionId: "basic", value: "8l / 100GB" }
+          { editionId: "basic", value: "8l / 100GB" },
+          { editionId: "pro", value: "6l / 100GB" },
+          { editionId: "ultimate", value: "2l / 100KB" },
         ],
-    },
-    {
+      },
+      {
         displayName: "Scare Factor Quotient",
         values: [
-            { editionId: "basic", value: "☠️" }
+          { editionId: "basic", value: "☠️" },
+          { editionId: "pro", value: "☠️☠️" },
+          { editionId: "ultimate", value: "☠️☠️☠️" },
         ],
-    },
+      },
     {
         displayName: "Easter Eggs",
         values: [

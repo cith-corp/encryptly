@@ -97,25 +97,31 @@ const features: TFeature[] = [
           },
         ],
       },
-    {
+      {
         displayName: "Ransom Autocollect™",
         values: [
-            { editionId: "basic", isTickbox: true, value: true }
+          { editionId: "basic", isTickbox: true, value: true },
+          { editionId: "pro", isTickbox: true, value: false },
+          { editionId: "ultimate", isTickbox: true, value: false },
         ],
-    },
-    {
+      },
+      {
         displayName: '"Get Out Of Jail"-Card Included',
         values: [
-            { editionId: "basic", isTickbox: true, value: false }
+          { editionId: "basic", isTickbox: true, value: false },
+          { editionId: "pro", isTickbox: true, value: false },
+          { editionId: "ultimate", isTickbox: true, value: false },
         ],
-    },
-    {
+      },
+      {
         displayName: "Is Cool",
         values: [
-            { editionId: "basic", isTickbox: true, value: false }
+          { editionId: "basic", isTickbox: true, value: false },
+          { editionId: "pro", isTickbox: true, value: false },
+          { editionId: "ultimate", isTickbox: true, value: true },
         ],
-    },
-];
+      },
+    ];
 
 function TestimonialCard({ name, role, company, content, rating, image }: any) {
     return (

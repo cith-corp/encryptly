@@ -194,93 +194,93 @@ function Feature({ icon, title, description }: any) {
 
 function Footer() {
     return (
-      <footer className="border-t border-neutral-6 py-12">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <Virus className="text-accent-9" size={24} weight="duotone" />
-                <span className="text-xl font-bold">Encryptly</span>
-              </div>
-              <p className="text-neutral-11">
-                Lowering work efficiency arround the world since 1999
-              </p>
+        <footer className="border-t border-neutral-6 py-12">
+            <div className="max-w-7xl mx-auto px-4">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div className="space-y-4">
+                        <div className="flex items-center gap-2">
+                            <Virus className="text-accent-9" size={24} weight="duotone" />
+                            <span className="text-xl font-bold">Encryptly</span>
+                        </div>
+                        <p className="text-neutral-11">
+                            Lowering work efficiency arround the world since 1999
+                        </p>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h4 className="font-semibold">Connect With Us</h4>
+                        <div className="space-y-2">
+                            <a
+                                href="https://github.com"
+                                className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
+                            >
+                                <GithubLogo weight="duotone" />
+                                GitHub
+                            </a>
+                            <a
+                                href="https://x.com"
+                                className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
+                            >
+                                <XLogo weight="duotone" />X
+                            </a>
+                            <a
+                                href="https://linkedin.com"
+                                className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
+                            >
+                                <LinkedinLogo weight="duotone" />
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h4 className="font-semibold">Legal</h4>
+                        <div className="space-y-2">
+                            <a
+                                href="/imprint"
+                                className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
+                            >
+                                <Article weight="duotone" />
+                                Imprint
+                            </a>
+                            <a
+                                href="/privacy"
+                                className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
+                            >
+                                <Shield weight="duotone" />
+                                Privacy Policy
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className="space-y-4">
+                        <h4 className="font-semibold">Security</h4>
+                        <div className="space-y-2">
+                            <a
+                                href="/bugbounty"
+                                className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
+                            >
+                                <Bug weight="duotone" />
+                                Bug Bounty Program
+                            </a>
+                            <a
+                                href="/security"
+                                className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
+                            >
+                                <Shield weight="duotone" />
+                                Security Policy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-8 pt-8 border-t border-neutral-6 text-center text-neutral-11">
+                    <p>&copy; {new Date().getFullYear()} Encryptly. All rights served.</p>
+                </div>
             </div>
-  
-            <div className="space-y-4">
-              <h4 className="font-semibold">Connect With Us</h4>
-              <div className="space-y-2">
-                <a
-                  href="https://github.com"
-                  className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
-                >
-                  <GithubLogo weight="duotone" />
-                  GitHub
-                </a>
-                <a
-                  href="https://x.com"
-                  className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
-                >
-                  <XLogo weight="duotone" />X
-                </a>
-                <a
-                  href="https://linkedin.com"
-                  className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
-                >
-                  <LinkedinLogo weight="duotone" />
-                  LinkedIn
-                </a>
-              </div>
-            </div>
-  
-            <div className="space-y-4">
-              <h4 className="font-semibold">Legal</h4>
-              <div className="space-y-2">
-                <a
-                  href="/imprint"
-                  className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
-                >
-                  <Article weight="duotone" />
-                  Imprint
-                </a>
-                <a
-                  href="/privacy"
-                  className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
-                >
-                  <Shield weight="duotone" />
-                  Privacy Policy
-                </a>
-              </div>
-            </div>
-  
-            <div className="space-y-4">
-              <h4 className="font-semibold">Security</h4>
-              <div className="space-y-2">
-                <a
-                  href="/bugbounty"
-                  className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
-                >
-                  <Bug weight="duotone" />
-                  Bug Bounty Program
-                </a>
-                <a
-                  href="/security"
-                  className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
-                >
-                  <Shield weight="duotone" />
-                  Security Policy
-                </a>
-              </div>
-            </div>
-          </div>
-  
-          <div className="mt-8 pt-8 border-t border-neutral-6 text-center text-neutral-11">
-            <p>&copy; {new Date().getFullYear()} Encryptly. All rights served.</p>
-          </div>
-        </div>
-      </footer>
+        </footer>
     );
-  }
+}
 
 function App() {
     const testimonials = [

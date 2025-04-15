@@ -32,11 +32,13 @@ const editions: TEdition[] = [
 
 const features: TFeature[] = [
     {
-        displayName: "Encription Speed",
+        displayName: "Test",
         values: [
-            { editionId: "basic", value: "1 DC/min" }
+          { editionId: "basic", value: "1 DC/min" },
+          { editionId: "pro", value: "5 DC/min" },
+          { editionId: "ultimate", value: "5+ DC/min" },
         ],
-    },
+      },
     {
         displayName: "Fuel Consumption",
         values: [

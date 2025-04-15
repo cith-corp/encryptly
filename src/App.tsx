@@ -195,6 +195,16 @@ function FeatureComparisonTable() {
         );
       }
 
+function Feature({ icon, title, description }: any) {
+  return (
+    <div className="space-y-2">
+      {icon}
+      <h3 className="text-xl font-semibold">{title}</h3>
+      <p className="text-neutral-11">{description}</p>
+    </div>
+  );
+}
+
 function TestimonialCard({ name, role, company, content, rating, image }: any) {
     return (
         <Card className="rounded-lg border border-neutral-6">

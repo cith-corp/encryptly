@@ -3,6 +3,7 @@ export type TEdition = {
     name: string
     price: number
 }
+
 export type TFeatureValue = {
     editionId: string
     isTickbox?: boolean
@@ -11,5 +12,5 @@ export type TFeatureValue = {
 
 export type TFeature = {
     displayName: string
-    values: TFeatureValue
+    values: TFeatureValue[]
 }

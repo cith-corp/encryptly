@@ -55,18 +55,48 @@ const features: TFeature[] = [
           { editionId: "ultimate", value: "☠️☠️☠️" },
         ],
       },
-    {
+      {
         displayName: "Easter Eggs",
         values: [
-            { editionId: "basic", isTickbox: true, value: false }
+          { editionId: "basic", isTickbox: true, value: false },
+          { editionId: "pro", isTickbox: true, value: true },
+          { editionId: "ultimate", value: "Maybe" },
         ],
-    },
-    {
+      },
+      {
         displayName: "Payment Options",
         values: [
-            { editionId: "basic", value: "Cash only" }
+          { editionId: "basic", value: "Cash only" },
+          {
+            editionId: "pro",
+            value: (
+              <>
+                <Text size="6">
+                  <div className="payment-options">
+                    <CurrencyJpy />
+                  </div>
+                </Text>
+              </>
+            ),
+          },
+          {
+            editionId: "ultimate",
+            value: (
+              <>
+                <Text size="6">
+                  <div className="payment-options">
+                    <CurrencyBtc />
+                    <CurrencyEth />
+                    <Coins />
+                    <CreditCard />
+                    <Bank />
+                  </div>
+                </Text>
+              </>
+            ),
+          },
         ],
-    },
+      },
     {
         displayName: "Ransom Autocollect™",
         values: [

@@ -122,6 +122,78 @@ const features: TFeature[] = [
         ],
       },
     ];
+    
+function FeatureComparisonTable() {
+        return (
+          <div className="overflow-x-auto">
+            <Table.Root variant="surface" size="3">
+              <Table.Header>
+                <Table.Row>
+                  <Table.ColumnHeaderCell>
+                    <Text size="5">Feature</Text>
+                  </Table.ColumnHeaderCell>
+                  {editions.map((edition, index) => (
+                    <Table.ColumnHeaderCell align="center" key={index}>
+                      <Text size="5">{edition.name}</Text>
+                    </Table.ColumnHeaderCell>
+                  ))}
+                </Table.Row>
+              </Table.Header>
+      
+              <Table.Body>
+                {features.map((feature, index) => (
+                  <Table.Row key={index}>
+                    <Table.RowHeaderCell>
+                      <Text size="3">{feature.displayName}</Text>
+                    </Table.RowHeaderCell>
+                    {editions.map((edition, index) => {
+                      let data: TFeatureValue | undefined = feature.values.find(
+                        (value) => value.editionId === edition.id
+                      );
+      
+                      if (!data) {
+                        return <Table.Cell align="center" key={index} />;
+                      }
+      
+                      if (data.isTickbox) {
+                        return (
+                          <Table.Cell align="center" key={index}>
+                            <Text size="6" color={data.value ? "grass" : "tomato"}>
+                              {data.value ? (
+                                <CheckCircle weight="fill" />
+                              ) : (
+                                <XCircle weight="fill" />
+                              )}
+                            </Text>
+                          </Table.Cell>
+                        );
+                      }
+      
+                      return (
+                        <Table.Cell align="center" key={index}>
+                          <Text size="3">{data.value}</Text>
+                        </Table.Cell>
+                      );
+                    })}
+                  </Table.Row>
+                ))}
+                <Table.Row></Table.Row>
+                <Table.Row>
+                  <Table.RowHeaderCell></Table.RowHeaderCell>
+                  {editions.map((edition, index) => (
+                    <Table.Cell align="center" key={index}>
+                      <Text weight="bold" size="6">
+                        ${edition.price}
+                      </Text>
+                      <Text size="3">/month</Text>
+                    </Table.Cell>
+                  ))}
+                </Table.Row>
+              </Table.Body>
+            </Table.Root>
+          </div>
+        );
+      }
 
 function TestimonialCard({ name, role, company, content, rating, image }: any) {
     return (

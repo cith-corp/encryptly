@@ -12,3 +12,4 @@ updates:
         versions: ["<4.0.0"]
       - dependency-name: "react"
         versions: ["<18.0.0"]
+        

@@ -277,7 +277,7 @@ function Footer() {
             <h4 className="font-semibold">Connect With Us</h4>
             <div className="space-y-2">
               <a
-                href="https://github.com"
+                href="https://github.com/cith-corp/encryptly"
                 className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
               >
                 <GithubLogo weight="duotone" />

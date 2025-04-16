@@ -1,0 +1,13 @@
+name: "🐛 BugBounty Report"
+description: Template for security bugs within encryptly.
+title: "[FIX ASAP!] - <title>"
+
+body:
+  - type: input
+    id: visual
+    attributes:
+      label: "Your problem"
+      description: What your fucking problem is
+      placeholder: I want to be encrypted faster!!! >:(
+    validations:
+      required: true

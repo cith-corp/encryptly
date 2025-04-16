@@ -13,3 +13,7 @@ updates:
       - dependency-name: "react"
         versions: ["<18.0.0"]
         
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"

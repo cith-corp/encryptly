@@ -3,6 +3,7 @@ import { Button, Card, Dialog, Flex, Table, Text, Separator } from "@radix-ui/th
 import dmtry from "./assets/DK1-002.jpg";
 import elon from "./assets/elon.jpg";
 import miguel from "./assets/miguel.jpg";
+import vlcrm from "./assets/vlcrm.svg";
 
 import { Avatar } from "radix-ui";
 
@@ -14,7 +15,6 @@ import {
   Shield,
   Star,
   Quotes,
-  GithubLogo,
   LinkedinLogo,
   Bug,
   Article,
@@ -277,13 +277,6 @@ function Footer() {
             <h4 className="font-semibold">Connect With Us</h4>
             <div className="space-y-2">
               <a
-                href="https://github.com/cith-corp/encryptly"
-                className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
-              >
-                <GithubLogo weight="duotone" />
-                GitHub
-              </a>
-              <a
                 href="https://x.com"
                 className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
               >
@@ -323,7 +316,9 @@ function Footer() {
             <h4 className="font-semibold">Security</h4>
             <div className="space-y-2">
               <a
-                href="/bugbounty"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/cith-corp/encryptly/issues/new?template=bug_report.yml"
                 className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
               >
                 <Bug weight="duotone" />
@@ -342,6 +337,9 @@ function Footer() {
 
         <div className="mt-8 pt-8 border-t border-neutral-6 text-center text-neutral-11">
           <p>&copy; {new Date().getFullYear()} Encryptly. All rights served.</p>
+        </div>
+        <div className="flex justify-center mt-2">
+          <img src={vlcrm} className="vlcrm-logo"/>
         </div>
       </div>
     </footer>

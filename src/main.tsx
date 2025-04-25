@@ -3,14 +3,14 @@ import { createRoot } from "react-dom/client";
 import { Theme } from "@radix-ui/themes";
 import "./index.css";
 import App from "./App";
-import { RouterProvider, createBrowserRouter } from "react-router";
+import { RouterProvider, createHashRouter } from "react-router";
 
 
 import "@radix-ui/themes/styles.css";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Imprint from "./Imprint";
 
-let router = createBrowserRouter([
+let router = createHashRouter([
   {
     path: "/",
     Component: App

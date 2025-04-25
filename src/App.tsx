@@ -296,14 +296,14 @@ function Footer() {
             <h4 className="font-semibold">Legal</h4>
             <div className="space-y-2">
               <a
-                href="/imprint"
+                href="/encryptly/#/imprint"
                 className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
               >
                 <Article weight="duotone" />
                 Imprint
               </a>
               <a
-                href="/privacy"
+                href="/encryptly/#/privacy"
                 className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
               >
                 <Shield weight="duotone" />
@@ -325,7 +325,7 @@ function Footer() {
                 Bug Bounty Program
               </a>
               <a
-                href="/security"
+                href="/encryptly/#/security"
                 className="flex items-center gap-2 text-neutral-11 hover:text-neutral-12"
               >
                 <Shield weight="duotone" />

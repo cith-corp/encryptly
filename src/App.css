@@ -34,3 +34,7 @@
 div.payment-options > svg {
   display: inline-block;
 }
+
+img.vlcrm-logo{
+  width: 3rem;
+}
